@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+         <!-- LOGO-->
+        <h2 id = "page-header">
+        <img src = "me.jpeg" alt = "profile pic">
+        Name | Yize Liu
+        </h2>
+         <!-- NAVIGATION-->
+         <nav id = "main-navigation">
+             <ul>
+                 <li><a href = "#services">My Skills</a></li>
+                 <li><a href = "#about">About me</a></li>
+                 <li><a href = "#testimonies">My projects</a></li>
+             </ul>
+        </nav>
+    </header>
+    <!-- MAIN-->
+    <div id = "page-main">
+         <!-- HERO-->
+         <div class = "hero">
+           <div class = "hero-content">
+               <h1 class = "hero-title">
+                  Welcome to my page
+               </h1>
+               <p>
+                 Yize Liu, from Boston University
+               </p>        
+           </div>
+         </div>
+         <!-- SERVICES-->
+         <div id = "services">
+         <div class = "site-section">
+           <div class = "section-header">
+               <h2>My Skills</h2>
+           </div>
+           <div class = "site-section-inside">
+           <div class = "service-box">
+              <img src = "java.png">
+               <h5>Java</h5>
+               <p></p>
+           </div>
+           
+          <div class = "service-box">
+              <img src = "js.png">
+               <h5>Javascript</h5>
+               <p></p>
+           </div>
+           
+           <div class = "service-box">
+              <img src = "python.png">
+               <h5>Python</h5>
+               <p></p>
+           </div>
+           <div class = "service-box">
+              <img src = "cpp.png">
+               <h5>C++</h5>
+               <p></p>
+           </div>
+            <div class = "service-box">
+              <img src = "front.jpeg">
+               <h5>HTML/CSS</h5>
+               <p></p>
+           </div>
+           </div>
+         </div>
+        </div>
+         <!-- ABOUT-->
+         <div  id = "about" class = "section-header about">
+             <h2>About me</h2>
+             <p>My name is Yize Liu. I am now a 1st year graduate student in Boston University, majoring in Electrical and Computer Engineering. I am very interested in software skills and have developed several web applications from end to end. During these experiences, I have learned all the basic knowledge and skills to be a software developer. I am familiar with programming languages including <strong>java</strong>, <strong>javascript</strong>, <strong>C++</strong>, <strong>python</strong>, <strong>html/css</strong> and the framework <strong>Angularjs</strong> and <strong>React</strong>. I am now looking for a full-time/part-time internship preferably in Software Engineering since May 2018. Feel free to contact with me, Thanks for your visiting!</p>
+        </div>
+         <!-- TESTMONIALS-->
+         <section id = "testimonies" class = "site-section testimonials-section-secondary">
+           <div class = "site-section-inside">
+             <div class = "section-header">
+                 <h2>My projects</h2>
+             </div>
+             
+             <div class = "testimonial-box">
+                <div class = "testimonial-content">
+                    In this project, I designed and implemented a web service that uses personalization to improve events search and recommendation based on search history and favorite records.with the use of <strong>Java</strong>, <strong>MySQL</strong>, <strong>Ajax</strong>, <strong>Jquery</strong>.
+                </div>
+                <div class = "testimonial-author">
+                <img src ="restaurant.png" alt = "first">
+                    <h5>Restaurant Recommendation Web Service</h5>
+                    <a href = 'http://18.216.195.204:8080/Titan/#'>Click here to visit</a>
+                 </div>
+             </div>
+             
+            <div class = "testimonial-box">
+                <div class = "testimonial-content">
+                    In this project, I designed and implemented a web service that could recognize and predict the name and location of the building in uploaded image with the use of python <strong>flask</strong>, <strong>firebase</strong> and <strong>Tensorflow</strong>.
+                </div>
+                <div class = "testimonial-author">
+                <img src ="building.png" alt = "first">
+                    <h5>Building Recognition System</h5>
+                    <a href = 'http://13.58.54.44:5000/'>Click here to visit</a>
+                 </div>
+             </div>
+             
+             <div class = "testimonial-box">
+                <div class = "testimonial-content">
+                   In this project, I build a scalable web service in <strong>Go</strong> language to handle posts and deployed to Google App Engine (GAE) for better
+scaling, and create a social network application based on geolocation.
+                </div>
+                <div class = "testimonial-author">
+                <img src ="twitter.png" alt = "first">
+                    <h5>Around: Geo-index based social network</h5>
+                    <a href = 'https://github.com/lyztxyd1995/Around'>Click here to visit</a>
+                 </div>
+             </div>
+             
+            <div class = "testimonial-box">
+                <div class = "testimonial-content">
+                    In this project, I created a dashboard to show the heat map to visualize individual player's shot data for NBA players by using <strong>React</strong> and <strong>ES6</strong>.
+                </div>
+                <div class = "testimonial-author">
+                <img src ="nba.png" alt = "first">
+                    <h5>NBA Player Strength Visualization</h5>
+                    <a href = 'https://github.com/lyztxyd1995/NBA-web'>Click here to visit</a>
+                 </div>
+             </div>
+             
+           </div> 
+         </section>
+    </div>
+    <!-- FOOTER-->
+    <footer id = "footer">
+        <img src = "me.jpeg" alt = "">
+        <span><strong>My contact Information:</strong><br/>
+            <div class = "contact">
+            <strong>Address:</strong>21 Higgins Street, Boston, MA, 02134<br/>
+            <strong>Tel:</strong> (857)8691466<br/>
+            <strong>Email:</strong> liuyize19950222@gmail.com<br/>
+            <strong>Github:</strong> https://github.com/lyztxyd1995<br/>
+            <strong>wetchat:</strong> xionghaizi950222<br/>
+            </div>
+        &copy; 2018</span>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBlRXQItnFeRXb1pfJTEudRt4cycfmcQcQ",
+    authDomain: "myreusume.firebaseapp.com",
+    databaseURL: "https://myreusume.firebaseio.com",
+    projectId: "myreusume",
+    storageBucket: "",
+    messagingSenderId: "965181920658"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
